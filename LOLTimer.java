@@ -11,8 +11,6 @@ public class LOLTimer extends JFrame{
     public LOLTimer(){
     	setLayout(new GridLayout(5,4,1,1));
     	setBackground(Color.WHITE);
-    //	setUndecorated(true);
-
     	
     	blue = new JButton("Blue");
     	add(blue);    	
@@ -27,7 +25,7 @@ public class LOLTimer extends JFrame{
         redcount.setForeground(Color.BLACK);
 
     	ImageIcon dragon1 = new ImageIcon("lol_dragon.jpg");
-        dragon = new JButton("Dragon"/*,dragon1*/);
+        dragon = new JButton("Dragon");
         add(dragon);
         dragoncount = new JLabel("Waiting");
         add(dragoncount);
@@ -40,10 +38,6 @@ public class LOLTimer extends JFrame{
         add(baroncount);
         baroncount.setForeground(Color.BLACK);
 
-        
-/*        creater = new JLabel("Made by Oliver Du");
-        creater.setForeground(Color.BLACK);        
-		add(creater);*/
                 
         event e = new event();
         blue.addActionListener(e);
